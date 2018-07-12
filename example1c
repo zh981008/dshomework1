@@ -1,0 +1,112 @@
+#include<stdio.h>
+/* 
+int find(char a,char b)
+{
+	if(  (a=='*' || a=='/') && (b=='+' ||b=='-'))
+	return 1;
+	else
+	return 0;
+}
+	
+ 
+
+ 
+ int num[100];
+ char data[100];
+ int m=0,n=0;
+void numin(int a)
+{
+	num[m++]=a;
+}
+int numpop()
+{
+	int a;
+	a=num[m-1];	
+	m--;
+	num[m]='\0';
+	return a;
+}
+char charpop()
+{
+	char a;
+	a=data[n-1];
+	n--;
+	data[n]='\0';
+	return a;
+}
+void charin(char a)
+{
+	data[n++]=a;
+}*/
+int mul(int a,int b,char c)
+{
+	switch(c)
+	{
+		case '*':{
+			return a*b;
+			break;
+		}
+		case '/' :{
+		return a/b;
+		}
+		case '+':{
+			return a+b;
+			break;
+		}
+		case '-':{
+			return a-b;
+			break;
+		} 
+}
+}
+int main()
+{
+	
+	int num[100];
+	char data[100];
+	int i=0,j=0;
+	    int tpnum;
+	 	char tpdata;
+	 	while(tpdata!='=')
+		{
+		    scanf("%d %c",&tpnum,&tpdata);
+			num[i++]=tpnum		;
+			if (tpdata!='=')data[j++]=tpdata;
+			}
+			
+			
+			int num1,num2,tempnum;
+	/*			//	char tempdata;
+	while(tpdata!='=')
+	{
+		
+	    scanf("%d %c",&tpnum,&tpdata);
+			numin(tpnum);	
+			if( (tpdata=='*' || tpdata=='/') || m==-1) 
+			{
+			charin(tpdata);
+			scanf("%d %c",&tpnum,&tpdata);
+			numin(tpnum);
+			}
+			else{
+				
+				num1=numpop();
+					num2=numpop();
+					
+					tempnum=mul(num1,num2,tpdata);
+					numin(tempnum);
+					tpdata=charpop();
+				
+			}
+			
+			   	
+					
+				
+		
+		
+	}
+*/
+	
+	
+	return 0;
+}
